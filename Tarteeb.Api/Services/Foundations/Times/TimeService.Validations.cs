@@ -38,6 +38,7 @@ namespace Tarteeb.Api.Services.Foundations.Times
             Validate(
                 (Rule: IsInvalid(time.Id), nameof(Time.Id)),
                 (Rule: IsInvalid(time.HoursWorked), nameof(Time.HoursWorked)),
+                (Rule: IsInvalid(time.DateWorked), nameof(Time.DateWorked)),
                 (Rule: IsInvalid(time.Comment), nameof(Time.Comment)),
                 (Rule: IsInvalid(time.UserId), nameof(Time.UserId)),
                 (Rule: IsInvalid(time.TicketId), nameof(Time.TicketId)),
