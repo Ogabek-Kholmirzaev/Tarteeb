@@ -18,6 +18,7 @@ namespace Tarteeb.Api.Services.Foundations.Times
             Validate(
                 (Rule: IsInvalid(time.Id), Parameter: nameof(Time.Id)),
                 (Rule: IsInvalid(time.HoursWorked), Parameter: nameof(Time.HoursWorked)),
+                (Rule: IsInvalid(time.DateWorked), Parameter: nameof(Time.DateWorked)),
                 (Rule: IsInvalid(time.CreatedDate), Parameter: nameof(Time.CreatedDate)),
                 (Rule: IsInvalid(time.UpdatedDate), Parameter: nameof(Time.UpdatedDate)),
                 (Rule: IsNotRecent(time.CreatedDate), Parameter: nameof(Time.CreatedDate)),
